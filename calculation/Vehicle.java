@@ -3,16 +3,17 @@ package com.tax.calculation;
 public class Vehicle {
 	private String registrationNumber;
 	private String brandOfVehicle;
-	private double purchaseCost;
-	private int maxVelocity;
-	private int noOfSeats;
-	private int fuelType;
+	private int purchaseCost;
+	private Integer maxVelocity;
+	private Integer noOfSeats;
+	private FuelType fuelType;
+	//private int id;
+	private double vehicleTax;
 	public Vehicle(){
 		
 	}
-	
-	public Vehicle(String registrationNumber, String brandOfVehicle, double purchaseCost, int maxVelocity,
-			int noOfSeats, int fuelType) {
+	public Vehicle(String registrationNumber, String brandOfVehicle, int purchaseCost, Integer maxVelocity,
+			Integer noOfSeats, FuelType fuelType, double vehicleTax) {
 		super();
 		this.registrationNumber = registrationNumber;
 		this.brandOfVehicle = brandOfVehicle;
@@ -20,8 +21,9 @@ public class Vehicle {
 		this.maxVelocity = maxVelocity;
 		this.noOfSeats = noOfSeats;
 		this.fuelType = fuelType;
+		//this.id = id;
+		this.vehicleTax = vehicleTax;
 	}
-	
 	public String getRegistrationNumber() {
 		return registrationNumber;
 	}
@@ -34,37 +36,52 @@ public class Vehicle {
 	public void setBrandOfVehicle(String brandOfVehicle) {
 		this.brandOfVehicle = brandOfVehicle;
 	}
-	public double getPurchaseCost() {
+	public int getPurchaseCost() {
 		return purchaseCost;
 	}
-	public void setPurchaseCost(double purchaseCost) {
+	public void setPurchaseCost(int purchaseCost) {
 		this.purchaseCost = purchaseCost;
 	}
-	public int getMaxVelocity() {
+	public Integer getMaxVelocity() {
 		return maxVelocity;
 	}
-	public void setMaxVelocity(int maxVelocity) {
+	public void setMaxVelocity(Integer maxVelocity) {
 		this.maxVelocity = maxVelocity;
 	}
-	public int getNoOfSeats() {
+	public Integer getNoOfSeats() {
 		return noOfSeats;
 	}
-	public void setNoOfSeats(int noOfSeats) {
+	public void setNoOfSeats(Integer noOfSeats) {
 		this.noOfSeats = noOfSeats;
 	}
-	public int getFuelType() {
+	public FuelType getFuelType() {
 		return fuelType;
 	}
-	public void setFuelType(int fuelType) {
+	public void setFuelType(FuelType fuelType) {
 		this.fuelType = fuelType;
+	}
+//	public int getId() {
+//		return id;
+//	}
+//	public void setId(int id) {
+//		this.id = id;
+//	}
+	public double getVehicleTax() {
+		return vehicleTax;
+	}
+	public void setVehicleTax(double vehicleTax) {
+		this.vehicleTax = vehicleTax;
 	}
 	@Override
 	public String toString() {
 		return "Vehicle [registrationNumber=" + registrationNumber + ", brandOfVehicle=" + brandOfVehicle
 				+ ", purchaseCost=" + purchaseCost + ", maxVelocity=" + maxVelocity + ", noOfSeats=" + noOfSeats
-				+ ", fuelType=" + fuelType + "]";
+				+ ", id=" + ", vehicleTax=" + vehicleTax + "]";
 	}
-
+	
+	
+	
+	
 	
 
 }
