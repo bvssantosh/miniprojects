@@ -1,4 +1,4 @@
-package com.tax.calculation;
+package com.tax.calculation.models;
 
 public class Property {
 	private int id;

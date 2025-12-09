@@ -1,4 +1,4 @@
-package com.tax.calculation;
+package com.tax.calculation.models;
 
 public enum FuelType {
 	PETROL,DIESEL,CNG,LPG
